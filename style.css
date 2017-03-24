@@ -3,16 +3,25 @@ body {
   text-align: center;
   font-family: sans-serif;
 }
-h1, h2{
+h1, h2 {
   font-family: 'Sigmar One', sans-serif;
 }
 h1 {
   padding-top: 50px;
 }
-ol{
+h2, h3 {
+  padding-top: 30px;
+}
+ol {
   text-align: left;
   display: table;
   margin: auto;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding-bottom: 10px;
 }
 a {
   text-decoration: none;
@@ -27,6 +36,9 @@ input {
   width: 200px;
   border-style: none;
   border: thin solid black;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 label {
   width: 100px;
@@ -48,6 +60,9 @@ nav {
   border: thin solid black;
   border-radius: 8px;
   box-shadow: 3px 3px 3px #222;
+}
+.home {
+  float: left;
 }
 .container {
   margin: 2%;
@@ -90,10 +105,6 @@ nav {
   border-radius: 500px;
   border: thick solid black;
 }
-.ext-logo:hover {
-  border-radius: 500px;
-  border: thick solid black;
-}
 .pen:hover {
   background-color: #81e263;
 }
@@ -102,9 +113,6 @@ nav {
 }
 .git:hover {
   background-color: #ff973d;
-}
-.ext-header {
-  padding-top: 30px;
 }
 .button {
   text-align: center;
@@ -115,7 +123,4 @@ nav {
   width: 80px;
   padding: 4px;
   border-radius: 5px;
-}
-.home {
-  float: left;
 }

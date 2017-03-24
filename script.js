@@ -1,11 +1,13 @@
-function test() {
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var comment = document.getElementById('comment').value;
-  var node = document.getElementById('list');
+function commenter () {
+  var name = document.getElementById('name');
+  var email = document.getElementById('email');
+  var comment = document.getElementById('comment');
+  var list = document.getElementById('list');
   var item = document.createElement('li');
-  var text = document.createTextNode('test');
-  item.appendChild(text);
-  node.appendChild(item);
+  item.innerHTML = '<em>' + comment.value + '</em> - ' + name.value + ' (' + email.value + ')';
+  list.appendChild(item);
+  name.value = "";
+  email.value = "";
+  comment.value = "";
   return false;
 }
