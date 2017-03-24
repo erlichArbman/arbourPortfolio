@@ -3,9 +3,11 @@ body {
   text-align: center;
   font-family: sans-serif;
 }
-h1 {
+h1, h2{
   font-family: 'Sigmar One', sans-serif;
-  font-size: 40px;
+}
+h1 {
+  padding-top: 50px;
 }
 ol{
   text-align: left;
@@ -34,6 +36,21 @@ textarea {
   resize: none;
   width: 200px;
   height: 100px;
+}
+nav {
+  text-align: right;
+  background-color: #bab6c4;
+  padding: 10px;
+  position: fixed;
+  top: 5px;
+  width: 95%;
+  z-index: 2;
+  border: thin solid black;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px #222;
+}
+.container {
+  margin: 2%;
 }
 .text {
   border-radius: 5px;
@@ -65,18 +82,40 @@ textarea {
   position: relative;
   top: -5px;
 }
-.code-logo {
-  max-width: 200px;
-  max-height: 400px;
+.ext-logo {
+  margin: 5px;
+  max-width: 100px;
+  max-height: 100px;
   background-color: #dddddd;
   border-radius: 500px;
   border: thick solid black;
 }
-.code-logo:hover {
-  background-color: #45d147;
+.ext-logo:hover {
   border-radius: 500px;
   border: thick solid black;
 }
-.code-header {
+.pen:hover {
+  background-color: #81e263;
+}
+.linked:hover {
+  background-color: #bd82ed;
+}
+.git:hover {
+  background-color: #ff973d;
+}
+.ext-header {
   padding-top: 30px;
+}
+.button {
+  text-align: center;
+  margin-right: 10px;
+  display: inline-block;
+  color: #e9e6f2;
+  background-color: #413f47;
+  width: 80px;
+  padding: 4px;
+  border-radius: 5px;
+}
+.home {
+  float: left;
 }

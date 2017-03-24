@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sigmar One">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sigmar One">
   <title>
     Eric Arbour's Portfolio - Contact
   </title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
-    <h1>Eric Arbour</h1>
-  </header>
-  <h3>Contact Me</h3>
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" class="text" id="name" required>
-    <label for="email">Email:</label>
-    <input type="email" class="text" id="email" required>
-    <label for="comment">Comment:</label>
-    <textarea class="text" id="comment" required ></textarea>
-    <input type="submit" class="submit">
-  </form>
+  <nav>
+    <a href="index.html"><span class="button home">Home</span></a>
+    <a href="about.html"><span class="button">About</span></a>
+    <a href="contact.html"><span class="button">Contact</span></a>
+  </nav>
+  <div class="container">
+    <header>
+      <h1>Eric Arbour</h1>
+    </header>
+    <h3>Contact Me</h3>
+    <form onsubmit="return test()">
+      <label for="name">Name:</label>
+      <input type="text" class="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" class="text" id="email" required>
+      <label for="comment">Comment:</label>
+      <textarea class="text" id="comment" required ></textarea>
+      <input type="submit" class="submit">
+    </form>
+    <ul id="list"></ul>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
